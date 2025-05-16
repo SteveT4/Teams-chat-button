@@ -63,8 +63,7 @@ document.getElementById("chatBtn");
         }, 3000);
     }, 1000);
 
-    fetch(`$
-    {_spPageContextInfo.webAbsoluteUrl}/_api/web/lists/getbytitle('TeamsButtonClicks')/items`, {
+    fetch("https://www.avivaworld.com/sites/uk-cs-ba-life-imt/_api/web/lists/getbytitle('TeamsButtonClicks')/items", {
         method: "POST",
         headers: {
             "Accept": "application/json;odata=verbose",
@@ -85,10 +84,10 @@ document.getElementById("chatBtn");
 }
 
     button.addEventListener("click",
-        createChatRequest);
+        startChat);
     </script>
 
     <input type="hidden"
-    id="__REQUESTDIGEST" value="<%=Page.RequestDigest %>" />
+    id="__REQUESTDIGEST" value="<%=Page.RequestDigest %>"/>
 </body>    
 </html>
